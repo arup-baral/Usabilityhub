@@ -454,7 +454,7 @@ main {
 }
 
 .example-section {
-    width: 110%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,6 +468,7 @@ main {
     text-align: center;
     /* font-size: 2.2rem; */
     font-family: var(--header_font_family);
+    padding: 0 2px;
 }
 
 .example-section a {
@@ -478,7 +479,7 @@ main {
 }
 
 .exampleDiv {
-    width: 100%;
+    width: 105%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -535,7 +536,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    padding: 50px;
+    padding: 20px;
 }
 
 .panel-plan-left-box {
@@ -669,11 +670,11 @@ main {
 
 .trial-section-container {
     width: 100vw;
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 50px 0;
 }
 
 .trial-section {
@@ -719,11 +720,11 @@ main {
 
 .context-section-container {
     width: 100vw;
-    min-height: 55vh;
     background-color: var(--third_background_color);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0;
 }
 
 .context-section {

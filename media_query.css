@@ -135,11 +135,15 @@
     }
 
     .exampleDiv {
-        width: 90%;
+        width: 100%;
     }
 
     .exampleCard {
         width: 100%;
+    }
+
+    .panel-plan-section {
+        justify-content: space-evenly;
     }
 
     .panel-plan-right-box div p {
@@ -161,10 +165,18 @@
         text-align: center;
     }
 
+    .panel-plan-left-box span {
+        font-size: 1rem;
+    }
+
     .panel-plan-list-div {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
         text-align: left;
+    }
+
+    .panel-plan-list-class li {
+        padding: 5px;
     }
 
     .panel-plan-button {
