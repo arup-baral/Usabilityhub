@@ -1,0 +1,198 @@
+/* 1st break-point*/
+@media screen and (max-width: 991px) {
+    header, main {
+        width: 100%;
+    }
+
+    .navList li:nth-child(2) {
+        display: none;
+    }
+
+    .navList li:nth-child(3) {
+        display: block;
+    }
+
+    .companyLogo {
+        gap: 15px;
+    }
+
+    .exampleCard {
+        width: calc(46% - 9px);
+        height: 200px;
+    }
+
+    .trail-section-container {
+        margin-top: 10px;
+    }
+}
+
+/* 2nd break-point*/
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    .heroDiv {
+        flex-direction: column-reverse;
+    }
+
+    .leftBox {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    .try-for-free-button-with-text {
+        width: 100%;
+
+        & a {
+            width: 100%;
+        }
+    }
+
+    .topicCard {
+        width: calc(50% - 7px);
+    }
+
+    .exploreDiv {
+        gap: 60px;
+    }
+
+    .exploreSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .second-explore {
+        flex-direction: column-reverse;
+    }
+
+    .leftContainer {
+        width: 90%;
+    }
+
+    .rightContainer {
+        width: 100%;
+    }
+
+    .context-section {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 0;
+    }
+
+    .context-section-div, .context-section-list {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .rightFooterContent a img {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    header, main {
+        padding: 0;
+    }
+
+    .companyLogo {
+        gap: 15px;
+
+        & img {
+            height: 36px;
+        }
+    }
+
+    .researchTopic {
+        gap: 15px;
+    }
+
+    .topicCard {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .exampleDiv {
+        width: 90%;
+    }
+
+    .exampleCard {
+        width: 100%;
+    }
+
+    .panel-plan-right-box div p {
+        font-size: 0.9rem;
+    }
+
+    .panel-plan-right-box div p:nth-child(2) {
+        font-size: 1.1rem;
+    }
+    
+    .panel-plan-right-box div p span {
+        font-size: 2rem;
+        top: 5px;
+    }
+
+    .panel-plan-left-box {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .panel-plan-list-div {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .panel-plan-button {
+        flex-direction: column;
+    }
+
+    .trial-section {
+        width: 94%;
+    }
+
+    .trial-section-paragraph {
+        margin: 20px auto 0px;
+    }
+    
+    .trial-section div a {
+        padding: 12px 24px;
+    }
+
+    footer {
+        height: fit-content;
+    }
+
+    .footerContainer {
+        gap: 20px;
+    }
+
+    .leftFooterContent {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

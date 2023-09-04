@@ -18,6 +18,22 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
 html {
     overflow-y: auto;
 }
@@ -30,18 +46,18 @@ html {
     align-items: center;
     padding: 10px;
     overflow-x: hidden;
-    overflow-y: auto;
 }
 
 header, main {
     padding: 0px 20px;
+    width: 80%;
 }
 
 header {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .navContainer {
@@ -67,6 +83,10 @@ nav {
         justify-content: center;
         align-items: center;
     }
+}
+
+.navList li:nth-child(3) {
+    display: none;
 }
 
 #titleImg {
@@ -119,7 +139,6 @@ nav {
 }
 
 main {
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,13 +154,14 @@ main {
 }
 
 .leftBox {
+    width: 45vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 
     & h1 {
-        font-size: 3rem;
+        /* font-size: 3rem; */
         color: var(--primary_text_color);
         font-family: var(--header_font_family);
     }
@@ -168,6 +188,7 @@ main {
         padding: 14px 80px;
         font-size: 1rem;
         margin: 0;
+        text-align: center;
     }
 
     & p {
@@ -181,15 +202,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 0px 150px;
+    padding: 10px 20px;
 
     & img {
-        width: 520px;
+        width: 100%;
     }
 }
 
 .company {
-    width: calc(100% + 50px);
+    width: calc(100% + 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,6 +220,7 @@ main {
     & p {
         color: var(--primary_text_color);
         font-family: var(--header_font_family);
+        text-align: center;
     }
 }
 
@@ -206,7 +228,7 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 30px;
     margin-top: 30px;
@@ -225,11 +247,11 @@ main {
     justify-content: center;
     margin-top: 60px;
 
-    & h1 {
+    & h3 {
         position: relative;
         color: var(--primary_text_color);
         text-align: center;
-        font-size: 2rem;
+        /* font-size: 2rem; */
         font-family: var(--header_font_family);
     }
 }
@@ -259,18 +281,18 @@ main {
     align-items: center;
     flex-wrap: wrap;
     margin: 35px 0 0 0;
-    gap: 10px;
+    gap: 14px;
 }
 
 .topicCard {
-    width: 360px;
-    min-width: 15%;
+    width: 30%;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: center;
 
 
     & span {
@@ -304,7 +326,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     margin-top: 100px;
 }
 
@@ -441,10 +463,10 @@ main {
     margin-top: 60px;
 }
 
-.example-section h1 {
+.example-section h2 {
     color: var(--primary_text_color);
     text-align: center;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     font-family: var(--header_font_family);
 }
 
@@ -462,15 +484,13 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 18px;
-    margin-top: 8px;
+    margin: 8px 0 0 0;
 }
 
 .exampleCard {
     position: relative;
     width: 22%;
-    min-width: 180px;
     height: 340px;
-    min-height: 250px;
     background: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(Images/asset\ 36.jpeg);
     background-size: cover;
@@ -530,7 +550,7 @@ main {
 
 .panel-plan-left-box h1 {
     color: #ffffff;
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
     font-family: var(--header_font_family);
 }
 
@@ -565,7 +585,6 @@ main {
     margin: 0 18px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 
     & li {
         padding: 5px;
@@ -580,6 +599,7 @@ main {
 .panel-plan-button {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 
     & p { 
         color: var(--light_text_color);
@@ -593,6 +613,7 @@ main {
     margin: 5px;
     font-family: var(--text_font_family);
     padding: 10px 24px;
+    text-align: center;
 }
 
 .panel-plan-second-btn {
@@ -646,7 +667,7 @@ main {
     top: 10px;
 }
 
-.trail-section-container {
+.trial-section-container {
     width: 100vw;
     height: 60vh;
     display: flex;
@@ -655,7 +676,7 @@ main {
     margin-top: 30px;
 }
 
-.trail-section {
+.trial-section {
     width: 70%;
     min-height: 40%;
     display: flex;
@@ -666,15 +687,15 @@ main {
     padding-top: 10px;
 }
 
-.trail-section h1 {
+.trial-section h2 {
     color: var(--primary_text_color);
     font-family: var(--header_font_family);
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     text-align: center;
     margin: 10px auto 0px;
 }
 
-.trail-section-paragraph {
+.trial-section-paragraph {
     max-width: 400px;
     color: var(--secondary_text_color);
     font-family: var(--text_font_family);
@@ -684,13 +705,13 @@ main {
     padding-top: 10px;
 }
 
-.trail-section div a {
+.trial-section div a {
     padding: 16px 36px;
     margin: 20px auto 0px;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-.trail-section div p {
+.trial-section div p {
     font-size: 0.8rem;
     margin: auto;
     padding: 10px 0 0;
@@ -712,7 +733,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10px;
 }
 
@@ -730,7 +751,7 @@ main {
     margin: 0px auto auto;
 }
 
-.context-section-div h3 {
+.context-section-div h4 {
     color: var(--primary_text_color);
     font-family: var(--header_font_family);
     padding: 2px;
@@ -759,12 +780,11 @@ main {
 
 footer {
     width: 100vw;
-    min-height: 70px;
     background-color: var(--light_text_color);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
+    padding: 10px;
 }
 
 .footerContainer {
@@ -781,7 +801,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 30px;
     margin: 4px;
 }
